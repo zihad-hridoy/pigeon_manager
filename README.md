@@ -1,6 +1,6 @@
 # Pigeon Lineage & Loft Management System
 
-A comprehensive web-based platform built with **Laravel**, **Bootstrap**, and **jQuery** designed for pigeon breeders, racers, and loft managers to maintain detailed pedigrees, medical records, and daily loft operations.
+A comprehensive web-based platform built with **Laravel 13**, **Bootstrap 5**, and **jQuery** designed for pigeon breeders, racers, and loft managers to maintain pedigrees, medical logs, and daily loft operations.
 
 ---
 
@@ -16,13 +16,13 @@ A comprehensive web-based platform built with **Laravel**, **Bootstrap**, and **
 
 ## Tech Stack
 
-* **Backend:** PHP 8.2+, Laravel 11 / 12
+* **Backend:** PHP 8.3+, Laravel 13.x
 * **Frontend:** Blade, HTML5, CSS3, Bootstrap 5, jQuery
 * **Database:** SQLite (default for development) / MySQL
 
 ---
 
-## Quick Setup (Local or GitHub Codespaces)
+## Quick Setup (GitHub Codespaces or Local)
 
 ### 1. Clone & Install Dependencies
 ```bash
