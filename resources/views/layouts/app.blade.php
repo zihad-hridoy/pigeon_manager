@@ -26,6 +26,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/pigeons">Pigeons</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('health.index') }}">Health</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('flights.index') }}">Flights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('members.index') }}">Members</a>
+                        </li>
                     @endauth
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -35,6 +44,10 @@
                                 {{ Auth::user()->name }} ({{ Auth::user()->loft_name ?? 'My Loft' }})
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('members.show', Auth::user()) }}">My Profile</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
                                 <li>
                                     <form action="{{ route('logout') }}" method="POST">
                                         @csrf
